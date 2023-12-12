@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menu"
+    app:startDestination="@id/home">
+    <fragment
+        android:id="@+id/home"
+        android:name="com.example.bones.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/base"
+        android:name="com.example.bones.base"
+        android:label="fragment_base"
+        tools:layout="@layout/fragment_base" />
+    <fragment
+        android:id="@+id/operator"
+        android:name="com.example.bones.operator"
+        android:label="fragment_operator"
+        tools:layout="@layout/fragment_operator" />
+    <fragment
+        android:id="@+id/mostrarPersonajeFragment"
+        android:name="com.example.bones.MostrarPersonajeFragment"
+        android:label="fragment_mostrar_personaje"
+        tools:layout="@layout/fragment_mostrar_personaje" />
+    <fragment
+        android:id="@+id/nuevoPersonajeFragment"
+        android:name="com.example.bones.nuevoPersonajeFragment"
+        android:label="fragment_nuevo_personaje"
+        tools:layout="@layout/fragment_nuevo_personaje" />
+    <action
+        android:id="@+id/action_mostrarPersonajeFragment"
+        app:destination="@id/mostrarPersonajeFragment" />
+    <action
+        android:id="@+id/action_nuevoPersonajeFragment"
+        app:destination="@id/nuevoPersonajeFragment" />
+</navigation>
