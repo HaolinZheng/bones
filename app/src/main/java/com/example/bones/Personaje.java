@@ -1,6 +1,12 @@
 package com.example.bones;
 
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
+@Entity
 public class Personaje {
+    @PrimaryKey(autoGenerate = true)
+    int id;
     String nombre, class1, class2, damage;
     int calidad, hp, atk, def, cost, res, block, redeploy, votacion;
     float interval;

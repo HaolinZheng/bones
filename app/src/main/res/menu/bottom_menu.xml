@@ -3,13 +3,13 @@
     <item
         android:id="@+id/base"
         android:icon="@drawable/baseb"
-        android:title="" />
+        android:title="Base" />
     <item
         android:id="@+id/home"
         android:icon="@drawable/menub"
-        android:title="" />
+        android:title="Home" />
     <item
         android:id="@+id/operator"
         android:icon="@drawable/opn"
-        android:title="" />
+        android:title="Operator" />
 </menu>

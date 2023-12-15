@@ -3,10 +3,10 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:orientation="vertical"
         android:padding="16dp"
         tools:context=".nuevoPersonajeFragment">
+
         <EditText
             android:id="@+id/nombre"
             android:layout_width="match_parent"
@@ -31,51 +31,69 @@
             android:id="@+id/calidad"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Calidad"/>
+            android:hint="Calidad"
+            android:inputType="number"/>
         <EditText
             android:id="@+id/hp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Hp"/>
+            android:hint="Hp"
+            android:inputType="number"/>
         <EditText
             android:id="@+id/atk"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Atk"/>
+            android:hint="Atk"
+            android:inputType="number"/>
         <EditText
             android:id="@+id/def"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Def"/>
+            android:hint="Def"
+            android:inputType="number"/>
         <EditText
             android:id="@+id/cost"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Cost"/>
+            android:hint="Cost"
+            android:inputType="number"/>
         <EditText
             android:id="@+id/res"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Res"/>
+            android:hint="Res"
+            android:inputType="number"/>
         <EditText
             android:id="@+id/block"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Block"/>
+            android:hint="Block"
+            android:inputType="number"/>
         <EditText
             android:id="@+id/redeploy"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Redeploy"/>
+            android:hint="Redeploy"
+            android:inputType="number"/>
         <EditText
             android:id="@+id/interval"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Interval"/>
+            android:hint="Interval"
+            android:inputType="numberDecimal"/>
         <Button
             android:id="@+id/crear"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="CREAR"
             android:backgroundTint="@color/black"/>
+        <TextView
+            android:id="@+id/error"
+            android:textSize="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ff0000"
+            android:text="Falta campos!!"
+            android:gravity="center"
+            android:visibility="gone" />
     </LinearLayout>

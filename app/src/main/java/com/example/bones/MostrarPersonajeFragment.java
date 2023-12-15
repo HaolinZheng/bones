@@ -40,7 +40,7 @@ public class MostrarPersonajeFragment extends Fragment {
                 binding.cost.setText("cost " + elemento.cost);
                 binding.block.setText("block " + elemento.block);
                 binding.redeploy.setText("redeploy " + elemento.redeploy);
-                binding.interval.setText("interval " + elemento.interval);
+                binding.interval.setText("interval " + elemento.interval + "s");
             }
         });
     }
